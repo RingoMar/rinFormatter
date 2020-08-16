@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Rin Keto Formater</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="text-white bg-secondary">
+        <div class="biggestTop container">
+            <div class="row">
+                <svg viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">RIN KETO</text>
+                    </symbol>
+
+                    <g class="g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        </div>
+        <div class="HoldTop">
+            <div class="title-bar-fix shadow-sm d-flex sticky-top navbar bg-dark p-0" style="-webkit-app-region: drag">
+                <div class="font-weight-bold mx-2 text-info title-name">
+                    <span>RINKETO FORMATER</span>
+                </div>
+                <div class="justify-content-end yeabuttons">
+
+                    <button type="button" id="minimize"
+                        class="titleButts btn-group dohDragMeh btn border-dark text-white"><i
+                            class="fas fa-minus"></i></button>
+                    <button type="button" id="maximize"
+                        class="titleButts btn-group dohDragMeh btn border-dark text-white"><i
+                            class="far fa-square"></i></button>
+                    <button id="close" class="titleExits btn-group dohDragMeh btn border-dark text-white"><i
+                            class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="dynamicCompount container-md p-4 p-md-4">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Name</label>
+                            <input type="text" class="inName form-control bg-dark border-dark form-control text-white"
+                                id="inputEmail4" placeholder="Name...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Url</label>
+                            <input type="text" class="inUrl form-control bg-dark border-dark form-control text-white"
+                                id="inputPassword4" placeholder="Url...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Image</label>
+                            <input type="text" class="inImage form-control bg-dark border-dark form-control text-white"
+                                id="inputAddress" placeholder="https://i.imgur.com/kf9aPlX.png">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Description</label>
+                            <input type="text" class="inDes form-control bg-dark border-dark form-control text-white"
+                                id="inputAddress2" placeholder="This shit taste good">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="mb-3 col-6">
+                            <label for="validationTextarea">Ingredients</label>
+                            <textarea class="inIng form-control bg-dark border-dark text-white" id="validationTextarea"
+                                placeholder="Enter ingredients..."></textarea>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="validationTextarea">Directions</label>
+                            <textarea class="inDir form-control bg-dark border-dark text-white" id="validationTextarea"
+                                placeholder="Enter directions..."></textarea>
+                        </div>
+                    </div>
+
+                    <label for="inputAddress2">Tags</label>
+                    <div
+                        class="tagsContain bg-dark border-dark d-flex form-row justify-content-around rounded text-white p-2 m-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input checkbox-1x moring" type="checkbox" id="inlineCheckbox1"
+                                value="moring">
+                            <label class="form-check-label" for="inlineCheckbox1">Moring</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input checkbox-1x noon" type="checkbox" id="inlineCheckbox2"
+                                value="noon">
+                            <label class="form-check-label" for="inlineCheckbox2">Noon</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input checkbox-1x night" type="checkbox" id="inlineCheckbox3"
+                                value="night">
+                            <label class="form-check-label" for="inlineCheckbox3">Night</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input checkbox-1x crinkle" type="checkbox" id="inlineCheckbox4"
+                                value="crinkle">
+                            <label class="form-check-label" for="inlineCheckbox4">Crinkle</label>
+                        </div>
+                    </div>
+
+                    <div class="m-4 d-flex justify-content-md-around">
+                        <button type="button" class="greenSub btn btn-success btn-lg">Sumbit</button>
+                        <button type="button" class="redClear btn btn-danger btn-lg">Clear</button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="mb-3 col-6 col-md-6">
+                            <label for="validationTextarea" class="text-warning">Meta-Data.js</label>
+                            <textarea readonly class="form-control bg-dark border-dark text-white mdJS"
+                                id="validationTextarea" placeholder="Ouput for Meta-Data.js file.."></textarea>
+                            <button type="button"
+                                class="copyMD align-content-end btn btn-primary float-md-right my-md-2">COPY</button>
+                        </div>
+                        <div class="mb-3 col-6 col-md-6">
+                            <label for="validationTextarea" class="text-warning">Recipes.js</label>
+                            <textarea readonly class="form-control bg-dark border-dark text-white rJS"
+                                id="validationTextarea" placeholder="Output for Recipes.js file.."></textarea>
+                            <button type="button"
+                                class="align-content-end btn btn-primary float-md-right my-md-2 copyR">COPY</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg>
+
+    </script>
+    <script src="./view.js"></script>
+    <script>
+        const {
+            remote
+        } = require('electron');
+
+        document.getElementById('close').addEventListener('click', closeWindow);
+        document.getElementById('minimize').addEventListener('click', minimizeWindow);
+        document.getElementById('maximize').addEventListener('click', maximizeWindow);
+
+        function closeWindow() {
+            var window = remote.BrowserWindow.getFocusedWindow();
+            window.close();
+        }
+
+        function minimizeWindow() {
+            var window = remote.BrowserWindow.getFocusedWindow();
+            window.minimize();
+        }
+
+        function maximizeWindow() {
+            var window = remote.BrowserWindow.getFocusedWindow();
+            window.isMaximized() ? window.unmaximize() : window.maximize();
+        }
+
+    </script>
+
+</html>

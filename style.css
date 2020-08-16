@@ -1,0 +1,156 @@
+.form-control:focus {
+    border-color: #2f4964 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.137) !important;
+}
+
+textarea.form-control {
+    height: 130px !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+dynamicCompount::-webkit-scrollbar {
+    display: block;
+}
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.dohDragMeh {
+    -webkit-app-region: no-drag;
+}
+
+.titleExits:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+}
+
+.titleExits:hover {
+    background-color: #e22f2f !important;
+}
+
+.titleButts:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0) !important;
+}
+
+.titleButts:hover {
+    background-color: #212529 !important;
+}
+
+.full-width-preload {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.HoldTop {
+    display: none;
+}
+
+.biggestTop {
+    display: block;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #1b262c;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #1b262c;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #1b262c;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #1b262c;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #1b262c;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+.biggestTop.container {
+    top: 50% !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Anton;
+    z-index: 999 !important;
+    color: white;
+}
+
+.checkbox-1x {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    margin-right: 10px !important;
+}
+
+.title-bar-fix {
+    height: 30px !important;
+}
+
+.justify-content-end.yeabuttons button {
+    height: auto;
+    margin: auto;
+    top: -0.9px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-left: auto;
+    width: 20px;
+    border-radius: 0;
+}
+
+.justify-content-end.yeabuttons button svg {
+    top: 0px;
+    position: relative;
+    left: -5px;
+    height: 17px;
+}
+
+.button,
+.title-bar-fix,
+label {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}

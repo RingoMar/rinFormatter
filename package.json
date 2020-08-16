@@ -1,0 +1,22 @@
+{
+  "name": "rinketosubmit",
+  "version": "1.0.0",
+  "description": "A formater for Rin Keto (Pookie Keto)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./main.js",
+    "debug": "electron --inspect-brk=5858 ./main.js"
+  },
+  "author": "RingoMar",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "electron": "^9.2.0",
+    "electron-builder": "^22.8.0",
+    "electron-titlebar": "0.0.3",
+    "jquery": "^3.5.1"
+  }
+}
